@@ -19,6 +19,7 @@
   "workspaces": [
     "apps/*",
     "packages/*",
-    "config/*"
+    "config/*",
+    "apps/api/*"
   ]
 }
