@@ -2,15 +2,27 @@
   "name": "@saas/api",
   "version": "1.0.0",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/http/server.ts"
   },
   "dependencies": {
-    "@saas/auth": "*"
+    "@fastify/cors": "^10.0.2",
+    "@prisma/client": "^6.3.1",
+    "@saas/auth": "*",
+    "bcryptjs": "^2.4.3",
+    "fastify": "^5.2.1",
+    "fastify-type-provider-zod": "^4.0.2",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@saas/eslint-config": "*",
     "@saas/tsconfig": "*",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20.12.6",
+    "prisma": "^6.3.1",
     "tsx": "^4.7.2"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
